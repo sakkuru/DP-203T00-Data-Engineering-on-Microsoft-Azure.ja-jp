@@ -1,14 +1,14 @@
 ---
-title: オンライン ホステッド インストラクション
+title: オンラインでホスティングされている手順
 permalink: index.html
 layout: home
 ---
 
-# コンテンツ ディレクトリ
+# <a name="content-directory"></a>コンテンツ ディレクトリ
 
-各ラボの演習とデモへのハイパーリンクを以下に一覧表示します。
+各ラボの演習とデモへのハイパーリンクを以下に示します。
 
-## ラボ
+## <a name="labs"></a>ラボ
 
 {% assign labs = site.pages | where_exp:"page", "page.url contains '/Instructions/Labs'" %}
 | モジュール | ラボ |

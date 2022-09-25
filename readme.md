@@ -98,7 +98,7 @@ This lab teaches you how to ingest and process streaming data at scale with Even
 
 - GitHub 上のこれらのファイルは学生ハンドブックと組み合わせて使用するように設計されています。ただし、中央リポジトリとして GitHub 内にあるので、MCT とコース作成者が最新のラボ ファイルの共有ソースを持っている可能性があります。
 
-- 講師は、ラボを行うたびに、最新の Azure サービスに合わせて修正された個所がないか GitHub を確認し、最新のラボ用ファイルを取得してください。
+- すべての配信について、トレーナーは最新の Azure サービスをサポートするために行われた可能性がある変更を GitHub で確認し、配信用の最新のファイルを取得することをお勧めします。
 
 ## <a name="what-about-changes-to-the-student-handbook"></a>受講者ハンドブックの変更については?
 
