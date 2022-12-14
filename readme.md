@@ -1,6 +1,6 @@
 # <a name="dp-203t00-data-engineering-on-azure"></a>DP-203T00:Data Engineering in Azure
 
-Welcome to the course DP-203: Data Engineering on Azure. To support this course, we will need to make updates to the course content to keep it current with the Azure services used in the course.  We are publishing the lab instructions and lab files on GitHub to allow for open contributions between the course authors and MCTs to keep the content current with changes in the Azure platform.
+DP-203: Data Engineering on Azure コースへようこそ。 このコースをサポートするため、コースの内容を更新して、コースで使用される Azure サービスを最新の状態に維持する必要があります。  ラボの手順とラボ ファイルは GitHub で公開しています。これにより、コースの作成者と MCT 間でのオープンな作業が可能となり、Azure プラットフォームの変更に合わせてコンテンツを最新の状態に保つことができます。
 
 ## <a name="lab-overview"></a>ラボの概要
 
@@ -14,25 +14,25 @@ Welcome to the course DP-203: Data Engineering on Azure. To support this course,
 
 #### <a name="module-01-explore-compute-and-storage-options-for-data-engineering-workloads"></a>[モジュール 01:データ エンジニアリング ワークロードのコンピューティングおよびストレージ オプションを確認する](Instructions/Labs/LAB_01_compute_and_storage_options.md)
 
-This lab teaches ways to structure the data lake, and to optimize the files for exploration, streaming, and batch workloads. The student will learn how to organize the data lake into levels of data refinement as they transform files through batch and stream processing. The students will also experience working with Apache Spark in Azure Synapse Analytics.  They will learn how to create indexes on their datasets, such as CSV, JSON, and Parquet files, and use them for potential query and workload acceleration using Spark libraries including Hyperspace and MSSParkUtils.
+このラボでは、データ レイクを構成し、探索、ストリーミング、バッチ ワークロードに備えてファイルを最適化する方法を説明します。 バッチおよびストリーム処理によってファイルを変換するときに、データ レイクをデータの洗練度に応じて整理する方法について学習します。 また、Azure Synapse Analytics で Apache Spark を使用する経験も積みます。  データセットで CSV、JSON、Parquet ファイルのようなインデックスを作成し、これを使用して Hyperspace や MSSParkUtils などの Spark ライブラリでクエリやワークロード アクセラレーションを行う方法を学びます。
 
 #### <a name="module-02-run-interactive-queries-using-azure-synapse-analytics-serverless-sql-pools"></a>[モジュール 02:Azure Synapse Analytics サーバーレス SQL プールを使用してインタラクティブなクエリを実行する](Instructions/Labs/LAB_02_queries_using_serverless_sql_pools.md)
 
-DP-203: Data Engineering on Azure コースへようこそ。
+このラボでは、Azure Synapse Analytics のサーバーレス SQL プールで T-SQL ステートメントを実行し、データ レイクと外部ファイル ソースに格納されているファイルを使用する方法を学びます。 学生は、データ レイクに格納されている Parquet ファイルと、外部データ ストアに格納されている CSV ファイルに対してクエリを実行します。 次に、Azure Active Directory セキュリティ グループを作成し、ロールベースのアクセス制御 (RBAC) とアクセス制御リスト (ACL) を介してデータ レイク内のファイルへのアクセスを強制します。
 
 #### <a name="module-03-data-exploration-and-transformation-in-azure-databricks"></a>[モジュール 03:Azure Databricks でのデータの探索と変換](Instructions/Labs/LAB_03_data_transformation_in_databricks.md)
 
-このコースをサポートするため、コースの内容を更新して、コースで使用される Azure サービスを最新の状態に維持する必要があります。
+このラボでは、さまざまな Apache Spark DataFrame メソッドを使用して、Azure Databricks でデータを探索して変換する方法を説明します。 受講者は、標準的な DataFrame メソッドを実行してデータの探索と変換を行う方法を学びます。 また、重複データの削除や、日時の値の操作、列の名前変更、データの集計など、より高度なタスクを実行する方法を学習します。 選択した取り込み技術をプロビジョニングし、これを Stream Analytics と統合して、ストリーミング データで動作するソリューションを作成します。
 
 ### <a name="day-2"></a>Day 2
 
 #### <a name="module-04-explore-transform-and-load-data-into-the-data-warehouse-using-apache-spark"></a>[モジュール 04:Apache Spark を使用してデータの探索と変換を行い、データ ウェアハウスに読み込む](Instructions/Labs/LAB_04_data_warehouse_using_apache_spark.md)
 
-ラボの手順とラボ ファイルは GitHub で公開しています。これにより、コースの作成者と MCT 間でのオープンな作業が可能となり、Azure プラットフォームの変更に合わせてコンテンツを最新の状態に保つことができます。
+このラボでは、データ レイクに格納されているデータを探索し、データを変換して、リレーショナル データ ストアにデータを読み込む方法を学びます。 Parquet ファイルと JSON ファイルを探索し、階層構造を使用して JSON ファイルのクエリと変換を実行する技術を使用します。 その後、Apache Spark を使用してデータをデータ ウェアハウスに読み込み、データ レイクの Parquet データを専用 SQL プールのデータに統合します。
 
 #### <a name="module-05-ingest-and-load-data-into-the-data-warehouse"></a>[モジュール 05:データ ウェアハウスにデータを取り込んで読み込む](Instructions/Labs/LAB_05_load_data_into_the_data_warehouse.md)
 
-This lab teaches students how to ingest data into the data warehouse through T-SQL scripts and Synapse Analytics integration pipelines. The student will learn how to load data into Synapse dedicated SQL pools with PolyBase and COPY using T-SQL. The student will also learn how to use workload management along with a Copy activity in a Azure Synapse pipeline for petabyte-scale data ingestion.
+このラボでは、T-SQL スクリプトと Synapse Analytics 統合パイプラインを介してデータ ウェアハウスにデータを取り込む方法を説明します。 PolyBase を使用して Synapse 専用 SQL プールにデータを読み込む方法と、T-SQL を使用した COPY について学習します。 また、ワークロード管理を Azure Synapse パイプラインの Copy アクティビティと共に使用してペタバイト規模のデータ インジェストを行う方法についても学習します。
 
 #### <a name="module-06-transform-data-with-azure-data-factory-or-azure-synapse-pipelines"></a>[モジュール 06:Azure Data Factory または Azure Synapse パイプラインでデータを変換する](Instructions/Labs/LAB_06_transform_data_with_pipelines.md)
 
@@ -42,25 +42,25 @@ This lab teaches students how to ingest data into the data warehouse through T-S
 
 #### <a name="module-07-integrate-data-from-notebooks-with-azure-data-factory-or-azure-synapse-pipelines"></a>[モジュール 07:ノートブックのデータを Azure Data Factory または Azure Synapse パイプラインと統合する](Instructions/Labs/LAB_07_integrate_data_from_notebooks.md)
 
-In the lab, the students will create a notebook to query user activity and purchases that they have made in the past 12 months. They will then add the notebook to a pipeline using the new Notebook activity and execute this notebook after the Mapping Data Flow as part of their orchestration process. While configuring this the students will implement parameters to add dynamic content in the control flow and validate how the parameters can be used.
+このラボでは、過去 12 ヶ月間のユーザーのアクティビティと購入を照会するためにノートブックを作成します。 その後、新しいノートブック アクティビティを使用してノートブックをパイプラインに追加し、調整プロセスの一環としてマッピング データ フローの後でこのノートブックを実行します。 これを構成する間に、制御フローでダイナミック コンテンツを追加し、どのようにパラメーターを使用できるのか検証します。
 
 #### <a name="module-08-end-to-end-security-with-azure-synapse-analytics"></a>[モジュール 08:Azure Synapse Analytics を使用したエンドツーエンドのセキュリティ](Instructions/Labs/LAB_08_security_with_synapse_analytics.md)
 
-In this lab, students will learn how to secure a Synapse Analytics workspace and its supporting infrastructure. The student will observe the SQL Active Directory Admin, manage IP firewall rules, manage secrets with Azure Key Vault and access those secrets through a Key Vault linked service and pipeline activities. The student will understand how to implement column-level security, row-level security, and dynamic data masking when using dedicated SQL pools.
+このラボでは、Synapse Analytics ワークスペースとその補助インフラストラクチャを保護する方法を学習します。 学生は、SQL Active Directory 管理者、IP ファイアウォール規則の管理、Azure Key Vault を使用したシークレットの管理、および Key Vault のリンク サービスとパイプラインアクティビティを使用したシークレットへのアクセスを行います。 専用 SQL プールを使用するときに、列レベルのセキュリティ、行レベルのセキュリティ、および動的データ マスキングを実装する方法を理解します。
 
 #### <a name="module-09-support-hybrid-transactional-analytical-processing-htap-with-azure-synapse-link"></a>[モジュール 09:Azure Synapse Link を使用してハイブリッド トランザクション分析処理 (HTAP) に対応する](Instructions/Labs/LAB_09_htap_with_azure_synapse_link.md)
 
-This lab teaches you how Azure Synapse Link enables seamless connectivity of an Azure Cosmos DB account to a Synapse workspace. You will understand how to enable and configure Synapse link, then how to query the Azure Cosmos DB analytical store using Apache Spark and SQL Serverless.
+このラボでは、Azure Synapse Link によって Azure Cosmos DB アカウントを Synapse ワークスペースにシームレスに接続する方法を学習します。 Synapse Link を有効にして構成する方法、および Apache Spark プールと SQL サーバーレス プールを使用して Azure Cosmos DB 分析ストアのクエリを行う方法を学びます。
 ### <a name="day-4"></a>4 日目
 #### <a name="module-10-real-time-stream-processing-with-stream-analytics"></a>[モジュール 10: Stream Analyticsを使用したリアルタイムストリーム処理](Instructions/Labs/LAB_10_stream_analytics.md)
 
-This lab teaches you how to process streaming data with Azure Stream Analytics. You will ingest vehicle telemetry data into Event Hubs, then process that data in real time, using various windowing functions in Azure Stream Analytics. You will output the data to Azure Synapse Analytics. Finally, you will learn how to scale the Stream Analytics job to increase throughput.
+このラボでは、Azure Stream Analytics を使用してストリーミング データを処理する方法を学習します。 車両のテレメトリ データを Event Hubs に取り込んだ後、Azure Stream Analytics のさまざまなウィンドウ化関数を使用してリアルタイムでそのデータを処理します。 データは Azure Synapse Analytics に出力されます。 最後に、スループットを増やすために Stream Analytics ジョブのスケーリングを行う方法を学びます。
 
 #### <a name="module-11-create-a-stream-processing-solution-with-event-hubs-and-azure-databricks"></a>[モジュール 11: Event HubsとAzure Databrickを使用してストリーム処理ソリューションの作成](Instructions/Labs/LAB_11_stream_with_azure_databricks.md)
 
-This lab teaches you how to ingest and process streaming data at scale with Event Hubs and Spark Structured Streaming in Azure Databricks. You will learn the key features and uses of Structured Streaming. You will implement sliding windows to aggregate over chunks of data and apply watermarking to remove stale data. Finally, you will connect to Event Hubs to read and write streams.
+このラボでは、Azure Databricks で Event Hubs と Spark Structured Streaming を使用して大規模なストリーミング データの取り込みと処理を行う方法を学習します。 構造化ストリーミングの主な機能と使用方法について学びます。 スライディング ウィンドウを実装して、データのチャンクで集計を行い、基準値を適用して古いデータを削除します。 最後に、Event Hubs に接続して、ストリームの読み取りと書き込みを行います。
 
-- <bpt id="p1">**</bpt>Are you a MCT?<ept id="p1">**</ept> - Have a look at our <bpt id="p1">[</bpt>GitHub User Guide for MCTs<ept id="p1">](https://microsoftlearning.github.io/MCT-User-Guide/)</ept>.
+- **あなたは MCT ですか?** - [MCT 向けの GitHub ユーザー ガイド](https://microsoftlearning.github.io/MCT-User-Guide/)をご覧ください。
                                                                        
 ## <a name="how-should-i-use-these-files-relative-to-the-released-moc-files"></a>公開済みの MOC ファイルと一緒にこれらのファイルを使用する方法
 
@@ -68,11 +68,11 @@ This lab teaches you how to ingest and process streaming data at scale with Even
 
 - GitHub にあるファイルは、受講者ハンドブックと組み合わせて使えるように設計されています。ただし、MCT とコースの作成者が最新のラボ ファイルのソースを共有できるように、中央リポジトリとして GitHub に置いてあります。
 
-- このラボでは、データ レイクを構成し、探索、ストリーミング、バッチ ワークロードに備えてファイルを最適化する方法を説明します。
+- 各モジュールのラボの手順は /Instructions/Labs フォルダーに含まれています。 このフォルダー内の各サブフォルダーは各モジュールを参照しています。 たとえば、Lab01 は module01 などに関連付けされています。ラボの手順の各フォルダーには、受講者が従うことのできる README.md ファイルがあります。
 
 - 講師は、ラボを行うたびに、最新の Azure サービスに合わせて修正された個所がないか GitHub を確認し、最新のラボ用ファイルを取得してください。
 
-- バッチおよびストリーム処理によってファイルを変換するときに、データ レイクをデータの洗練度に応じて整理する方法について学習します。
+- ラボの手順に掲載されている画像の中には、このコースで使用するラボの環境の状態を必ずしも反映していないものもあります。 たとえば、データ レイクでファイルを参照する際、実際の環境では存在しない追加フォルダーが画像に表示されている可能性があります。 これは意図的なもので、ラボの手順には影響しません。
 
 ## <a name="what-about-changes-to-the-student-handbook"></a>受講者ハンドブックの変更については?
 
@@ -84,13 +84,13 @@ This lab teaches you how to ingest and process streaming data at scale with Even
 
 ## <a name="classroom-materials"></a>コース資料
 
-また、Azure Synapse Analytics で Apache Spark を使用する経験も積みます。
+MCT とパートナーが、これらの資料にアクセスし、学生に個別に提供することを強く推奨します。  進行中のクラスの一部としてラボ ステップにアクセスできるように、学生に直接 GitHub を指示するには、学生がコースの一部として別の UI にもアクセスする必要がありますが、これは混乱の原因となります。 個別のラボの手順を受け取る理由を学生に説明すると、クラウドベースのインターフェイスとプラットフォームが常に変化しているという性質を強調できます。 GitHub 上のファイルにアクセスするための Microsoft Learning サポートと GitHub サイトのナビゲーションのサポートは、このコースのみを教える MCT に限定されます。
 
 ## <a name="what-are-we-doing"></a>説明
 
-- データセットで CSV、JSON、Parquet ファイルのようなインデックスを作成し、これを使用して Hyperspace や MSSParkUtils などの Spark ライブラリでクエリやワークロード アクセラレーションを行う方法を学びます。
+- このコースをサポートするには、コースで使用される Azure サービスを最新の状態に保つために、コース コンテンツを頻繁に更新する必要があります。  ラボの手順とラボ ファイルは GitHub で公開しています。これにより、コースの作成者と MCT 間でのオープンな作業が可能となり、Azure プラットフォームの変更に合わせてコンテンツを最新の状態に保つことができます。
 
-- We hope that this brings a sense of collaboration to the labs like we've never had before - when Azure changes and you find it first during a live delivery, go ahead and make an enhancement right in the lab source.  Help your fellow MCTs.
+- これにより、今まで経験したことがないようなコラボレーション感がラボに生まれると期待しています。Azure が変更され、ライブ配信中にあなたがそれを最初に見つけた場合は、ラボ ソースで機能強化を行ってください。  仲間の MCT を支援しましょう。
 
 ## <a name="how-should-i-use-these-files-relative-to-the-released-moc-files"></a>リリースされた MOC のファイルに対してこれらのファイルを使用する方法
 
@@ -98,7 +98,7 @@ This lab teaches you how to ingest and process streaming data at scale with Even
 
 - GitHub 上のこれらのファイルは学生ハンドブックと組み合わせて使用するように設計されています。ただし、中央リポジトリとして GitHub 内にあるので、MCT とコース作成者が最新のラボ ファイルの共有ソースを持っている可能性があります。
 
-- すべての配信について、トレーナーは最新の Azure サービスをサポートするために行われた可能性がある変更を GitHub で確認し、配信用の最新のファイルを取得することをお勧めします。
+- 講師は、ラボを行うたびに、最新の Azure サービスに合わせて修正された個所がないか GitHub を確認し、最新のラボ用ファイルを取得してください。
 
 ## <a name="what-about-changes-to-the-student-handbook"></a>受講者ハンドブックの変更については?
 
@@ -108,10 +108,10 @@ This lab teaches you how to ingest and process streaming data at scale with Even
 
 - すべての MCT は、GitHub repro のコードまたはコンテンツに pull request を送信できます。Microsoft とコース作成者は、必要に応じてコンテンツとラボ コードの変更をトリアージして追加します。
 
-- You can submit bugs, changes, improvement and ideas.  Find a new Azure feature before we have?  Submit a new demo!
+- バグ、変更、改善、アイデアを送信できます。  新しい Azure 機能を先に見つけたら、  新しいデモを送信してください!
 
 ## <a name="notes"></a>Notes
 
 ### <a name="classroom-materials"></a>コース資料
 
-このラボでは、Azure Synapse Analytics のサーバーレス SQL プールで T-SQL ステートメントを実行し、データ レイクと外部ファイル ソースに格納されているファイルを使用する方法を学びます。
+MCT とパートナーが、これらの資料にアクセスし、学生に個別に提供することを強く推奨します。  進行中のクラスの一部としてラボ ステップにアクセスできるように、学生に直接 GitHub を指示するには、学生がコースの一部として別の UI にもアクセスする必要がありますが、これは混乱の原因となります。 個別のラボの手順を受け取る理由を学生に説明すると、クラウドベースのインターフェイスとプラットフォームが常に変化しているという性質を強調できます。 GitHub 上のファイルにアクセスするための Microsoft Learning サポートと GitHub サイトのナビゲーションのサポートは、このコースを教える MCT のみに限定されています。
